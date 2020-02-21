@@ -6,11 +6,13 @@ import Logo from "../../components/Logo";
 const Home = () => {
   return (
     <View style={{ flex: 1 }}>
-      <View style={{
-        flex: 1,
-        justifyContent: 'center',
-        alignItems: 'center'
-      }}>
+      <View
+        style={{
+          flex: 1,
+          justifyContent: "center",
+          alignItems: "center"
+        }}
+      >
         <Logo />
       </View>
     </View>

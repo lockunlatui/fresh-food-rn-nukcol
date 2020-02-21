@@ -11,7 +11,7 @@
     ],
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/images/logo.png",
     "updates": {
       "fallbackToCacheTimeout": 0
     },
@@ -21,6 +21,7 @@
     "ios": {
       "supportsTablet": true
     },
-    "description": ""
+    "description": "Fresh Food App by Lộc kun",
+    "githubUrl": "https://github.com/lockunlatui/fresh-food-rn-nukcol"
   }
 }

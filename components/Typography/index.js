@@ -2,18 +2,24 @@
  * @ Author: Do Xuan Loc - Kun
  * @ Create Time: 2020-01-22 11:40:04
  * @ Modified by: Do Xuan Loc - Kun
- * @ Modified time: 2020-01-22 21:27:52
+ * @ Modified time: 2020-01-23 11:55:58
  * @ Description:
  */
 
-import React from 'react';
-import {
-  Text,
-  StyleSheet
-} from 'react-native';
+import React from "react";
+import { Text } from "react-native";
 
-const Typography = ({ children, uppercase, subBody, bold, subTitle, color, body }) => {
+import styles from "./styles";
 
+const Typography = ({
+  children,
+  uppercase,
+  subBody,
+  bold,
+  subTitle,
+  color,
+  body
+}) => {
   const typoGraphyStyles = [
     subTitle && styles.subTitle,
     body && styles.body,
@@ -22,30 +28,8 @@ const Typography = ({ children, uppercase, subBody, bold, subTitle, color, body 
     uppercase && styles.uppercase,
     color && { color }
   ];
-  
-  return (
-    <Text style={typoGraphyStyles}>
-      {children}
-    </Text>
-  )
-}
 
-const styles = StyleSheet.create({
-  subTitle: {
-    fontSize: 24
-  },
-  body: {
-    fontSize: 16
-  },
-  subBody: {
-    fontSize: 14
-  },
-  bold: {
-    fontWeight: 'bold'
-  },
-  uppercase: {
-    textTransform: 'uppercase'
-  }
-})
+  return <Text style={typoGraphyStyles}>{children}</Text>;
+};
 
 export default Typography;
